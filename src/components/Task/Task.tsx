@@ -10,9 +10,9 @@ interface Props extends React.PropsWithChildren {
 const Task: React.FC<Props> = ({message, onRemove}) => {
 
   return (
-    <div>
-      <h1>{message}</h1>
-      <button onClick={onRemove}>Delete</button>
+    <div className="task">
+      {message}
+      <button onClick={onRemove} className="delete-button">Delete</button>
     </div>
   );
 };

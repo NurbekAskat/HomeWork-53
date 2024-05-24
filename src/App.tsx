@@ -8,8 +8,8 @@ import Task from './components/Task/Task';
 const App = () => {
 
   const [tasks, setTasks] = useState<TaskType[]>([
-    {message: 'Jane', id: 'j1'},
-    {message: 'sc', id: 'xsc '}
+    {message: 'First mission: find and detain killer knight', id: 'f1'},
+    {message: 'second mission: find and drink agusha', id: 's1 '}
   ]);
 
   const createTask = (newTask: TaskType) => {

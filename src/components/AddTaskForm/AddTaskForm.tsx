@@ -39,10 +39,9 @@ const AddTaskForm: React.FC<Props> = ({onSubmit}) => {
     <form className="taskForm" onSubmit={onFormSubmit}>
       <h4>Create task</h4>
       <label>
-        Task:
-        <input type="text" name="message" onChange={onFieldChange}/>
+        <input type="text" name="message" onChange={onFieldChange} className="task-input" placeholder="task"/>
       </label>
-      <button type="submit">Add</button>
+      <button type="submit" className="send-button">Add</button>
     </form>
   );
 };
